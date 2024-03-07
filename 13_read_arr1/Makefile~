@@ -1,0 +1,7 @@
+CC = gcc
+CFLAGS = Wall -Werror -Wextra -std=gnu99
+test: test.c
+    $(cc) $(CFLAGS) test.c -o test
+
+clean:
+     rm -f test
